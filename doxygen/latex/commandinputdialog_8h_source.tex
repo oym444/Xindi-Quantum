@@ -1,0 +1,41 @@
+\doxysection{commandinputdialog.\+h}
+\hypertarget{commandinputdialog_8h_source}{}\label{commandinputdialog_8h_source}\mbox{\hyperlink{commandinputdialog_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ COMMANDINPUTDIALOG\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ COMMANDINPUTDIALOG\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QTextEdit>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{commandparser_8h}{commandparser.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{commandhandler_8h}{commandhandler.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{trapezoidmodeler_8h}{trapezoidmodeler.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{extruder_8h}{extruder.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{visualizationwindow_8h}{visualizationwindow.h}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_command_input_dialog_abadbef7abaea0f7f7d16d69418a0b304}{CommandInputDialog}}\ :\ \textcolor{keyword}{public}\ QDialog\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_command_input_dialog_abadbef7abaea0f7f7d16d69418a0b304}{CommandInputDialog}}(\mbox{\hyperlink{class_trapezoid_modeler}{TrapezoidModeler}}\&\ modeler,\ \mbox{\hyperlink{class_extruder}{Extruder}}\&\ extruder,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_command_input_dialog_a7702b063ddb5e6c34e87609b7e712dbb}{\string~CommandInputDialog}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ onExecuteCommandClicked();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ QTextEdit*\ m\_commandEdit;\ \ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ QPushButton*\ m\_executeButton;\ \ }
+\DoxyCodeLine{00049\ \ \ \ \ QTextEdit*\ m\_outputText;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_command_parser}{CommandParser}}\ m\_parser;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_command_handler}{CommandHandler}}\ m\_handler;\ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_trapezoid_modeler}{TrapezoidModeler}}\&\ m\_modeler;\ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_extruder}{Extruder}}\&\ m\_extruder;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_visualization_window}{VisualizationWindow}}*\ m\_visualizationWindow;\ }
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMMANDINPUTDIALOG\_H}}
+\DoxyCodeLine{00057\ }
+
+\end{DoxyCode}

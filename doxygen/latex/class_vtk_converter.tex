@@ -1,0 +1,66 @@
+\doxysection{Vtk\+Converter Class Reference}
+\hypertarget{class_vtk_converter}{}\label{class_vtk_converter}\index{VtkConverter@{VtkConverter}}
+
+
+VTK 转换器类  
+
+
+
+
+{\ttfamily \#include $<$vtkconverter.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{class_vtk_converter_a8c7a2f374b0124bfab6cca8e4b6569d5}{convert\+To\+Vtk\+High\+Level}} (const Topo\+DS\+\_\+\+Shape \&shape)
+\begin{DoxyCompactList}\small\item\em 使用高级 API 转换为 VTK 数据 \end{DoxyCompactList}\item 
+static vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{class_vtk_converter_af416f5ed2c511e78ff5c951d02de77e8}{convert\+To\+Vtk\+Low\+Level}} (const Topo\+DS\+\_\+\+Shape \&shape)
+\begin{DoxyCompactList}\small\item\em 使用低级 API 转换为 VTK 数据 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+VTK 转换器类 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vtk_converter_a8c7a2f374b0124bfab6cca8e4b6569d5}\index{VtkConverter@{VtkConverter}!convertToVtkHighLevel@{convertToVtkHighLevel}}
+\index{convertToVtkHighLevel@{convertToVtkHighLevel}!VtkConverter@{VtkConverter}}
+\doxysubsubsection{\texorpdfstring{convertToVtkHighLevel()}{convertToVtkHighLevel()}}
+{\footnotesize\ttfamily \label{class_vtk_converter_a8c7a2f374b0124bfab6cca8e4b6569d5} 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ Vtk\+Converter\+::convert\+To\+Vtk\+High\+Level (\begin{DoxyParamCaption}\item[{const Topo\+DS\+\_\+\+Shape \&}]{shape}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+使用高级 API 转换为 VTK 数据 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & Open\+CASCADE 模型形状 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+转换后的 VTK 数据 
+\end{DoxyReturn}
+\Hypertarget{class_vtk_converter_af416f5ed2c511e78ff5c951d02de77e8}\index{VtkConverter@{VtkConverter}!convertToVtkLowLevel@{convertToVtkLowLevel}}
+\index{convertToVtkLowLevel@{convertToVtkLowLevel}!VtkConverter@{VtkConverter}}
+\doxysubsubsection{\texorpdfstring{convertToVtkLowLevel()}{convertToVtkLowLevel()}}
+{\footnotesize\ttfamily \label{class_vtk_converter_af416f5ed2c511e78ff5c951d02de77e8} 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ Vtk\+Converter\+::convert\+To\+Vtk\+Low\+Level (\begin{DoxyParamCaption}\item[{const Topo\+DS\+\_\+\+Shape \&}]{shape}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+使用低级 API 转换为 VTK 数据 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & Open\+CASCADE 模型形状 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+转换后的 VTK 数据 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vtkconverter_8h}{vtkconverter.\+h}}\item 
+vtkconverter.\+cpp\end{DoxyCompactItemize}

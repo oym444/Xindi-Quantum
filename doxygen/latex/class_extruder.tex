@@ -1,0 +1,99 @@
+\doxysection{Extruder Class Reference}
+\hypertarget{class_extruder}{}\label{class_extruder}\index{Extruder@{Extruder}}
+
+
+拉伸器类  
+
+
+
+
+{\ttfamily \#include $<$extruder.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_extruder_af58696ee8675344b7350fd9b7097bb94}\label{class_extruder_af58696ee8675344b7350fd9b7097bb94} 
+{\bfseries Extruder} ()
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_extruder_a571f3a01c230e623f8e69e98548c5a09}{set\+Extrude\+Parameters}} (double distance)
+\begin{DoxyCompactList}\small\item\em 设置拉伸参数 \end{DoxyCompactList}\item 
+Topo\+DS\+\_\+\+Shape \mbox{\hyperlink{class_extruder_a84703f1f8b1475ab2f8d5a3d9beed822}{extrude}} (const Topo\+DS\+\_\+\+Shape \&shape)
+\begin{DoxyCompactList}\small\item\em 执行拉伸操作 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_extruder_a0aa9d0875787f55d4f664735f4d1ba35}{get\+Error\+Info}} () const
+\begin{DoxyCompactList}\small\item\em 获取错误信息 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_extruder_a06da44f89a2f6873bb93eed18d9702b5}{get\+Status\+Info}} () const
+\begin{DoxyCompactList}\small\item\em 获取拉伸状态信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+拉伸器类 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_extruder_a84703f1f8b1475ab2f8d5a3d9beed822}\index{Extruder@{Extruder}!extrude@{extrude}}
+\index{extrude@{extrude}!Extruder@{Extruder}}
+\doxysubsubsection{\texorpdfstring{extrude()}{extrude()}}
+{\footnotesize\ttfamily \label{class_extruder_a84703f1f8b1475ab2f8d5a3d9beed822} 
+Topo\+DS\+\_\+\+Shape Extruder\+::extrude (\begin{DoxyParamCaption}\item[{const Topo\+DS\+\_\+\+Shape \&}]{shape}{}\end{DoxyParamCaption})}
+
+
+
+执行拉伸操作 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & 输入的二维模型形状 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+拉伸后的三维模型形状 
+\end{DoxyReturn}
+\Hypertarget{class_extruder_a0aa9d0875787f55d4f664735f4d1ba35}\index{Extruder@{Extruder}!getErrorInfo@{getErrorInfo}}
+\index{getErrorInfo@{getErrorInfo}!Extruder@{Extruder}}
+\doxysubsubsection{\texorpdfstring{getErrorInfo()}{getErrorInfo()}}
+{\footnotesize\ttfamily \label{class_extruder_a0aa9d0875787f55d4f664735f4d1ba35} 
+QString Extruder\+::get\+Error\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+获取错误信息 
+
+\begin{DoxyReturn}{Returns}
+错误信息 
+\end{DoxyReturn}
+\Hypertarget{class_extruder_a06da44f89a2f6873bb93eed18d9702b5}\index{Extruder@{Extruder}!getStatusInfo@{getStatusInfo}}
+\index{getStatusInfo@{getStatusInfo}!Extruder@{Extruder}}
+\doxysubsubsection{\texorpdfstring{getStatusInfo()}{getStatusInfo()}}
+{\footnotesize\ttfamily \label{class_extruder_a06da44f89a2f6873bb93eed18d9702b5} 
+QString Extruder\+::get\+Status\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+获取拉伸状态信息 
+
+\begin{DoxyReturn}{Returns}
+状态信息 
+\end{DoxyReturn}
+\Hypertarget{class_extruder_a571f3a01c230e623f8e69e98548c5a09}\index{Extruder@{Extruder}!setExtrudeParameters@{setExtrudeParameters}}
+\index{setExtrudeParameters@{setExtrudeParameters}!Extruder@{Extruder}}
+\doxysubsubsection{\texorpdfstring{setExtrudeParameters()}{setExtrudeParameters()}}
+{\footnotesize\ttfamily \label{class_extruder_a571f3a01c230e623f8e69e98548c5a09} 
+bool Extruder\+::set\+Extrude\+Parameters (\begin{DoxyParamCaption}\item[{double}]{distance}{}\end{DoxyParamCaption})}
+
+
+
+设置拉伸参数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & 拉伸距离 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否成功 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{extruder_8h}{extruder.\+h}}\item 
+extruder.\+cpp\end{DoxyCompactItemize}

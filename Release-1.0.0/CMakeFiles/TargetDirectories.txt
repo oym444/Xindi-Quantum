@@ -1,0 +1,10 @@
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/CADBuilder.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/CADBuilderTests.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/test.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/edit_cache.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/rebuild_cache.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/list_install_components.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/install.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/install/local.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/CADBuilder_autogen.dir
+D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/CADBuilderTests_autogen.dir

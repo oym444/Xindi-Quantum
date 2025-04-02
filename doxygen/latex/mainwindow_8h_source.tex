@@ -1,0 +1,81 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{mainwindow_8h_source}{}\label{mainwindow_8h_source}\mbox{\hyperlink{mainwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{trapezoidmodeler_8h}{trapezoidmodeler.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{extruder_8h}{extruder.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{commandparser_8h}{commandparser.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{commandhandler_8h}{commandhandler.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{commandinputdialog_8h}{CommandInputDialog.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QGroupBox>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QFileDialog>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QComboBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{visualizationwindow_8h}{visualizationwindow.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <vtkRenderWindow.h>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QVTKOpenGLNativeWidget.h>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <vtkActor.h>}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00033\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }MainWindow;\ \}}
+\DoxyCodeLine{00034\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a299d926f4b899f81e82871f44fe64dbb}{setParameters}}(\textcolor{keywordtype}{double}\ width,\ \textcolor{keywordtype}{double}\ height,\ \textcolor{keywordtype}{double}\ theta,\ \textcolor{keywordtype}{double}\ extrudeDistance,\ \textcolor{keyword}{const}\ QString\&\ savePath);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ onBuildModelClicked();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ onSaveModelClicked();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ onExtrudeClicked();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ onShowModelClicked();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ onCommandButtonClicked();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00090\ \ \ \ \ Ui::MainWindow\ *ui;}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_trapezoid_modeler}{TrapezoidModeler}}\ m\_modeler;}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_extruder}{Extruder}}\ m\_extruder;}
+\DoxyCodeLine{00093\ \ \ \ \ QLineEdit\ *m\_widthEdit;}
+\DoxyCodeLine{00094\ \ \ \ \ QLineEdit\ *m\_heightEdit;}
+\DoxyCodeLine{00095\ \ \ \ \ QLineEdit\ *m\_thetaEdit;}
+\DoxyCodeLine{00096\ \ \ \ \ QLineEdit\ *m\_extrudeDistanceEdit;}
+\DoxyCodeLine{00097\ \ \ \ \ QLineEdit\ *m\_savePathEdit;}
+\DoxyCodeLine{00098\ \ \ \ \ QPushButton\ *m\_buildButton;}
+\DoxyCodeLine{00099\ \ \ \ \ QPushButton\ *m\_saveButton;}
+\DoxyCodeLine{00100\ \ \ \ \ QPushButton\ *m\_extrudeButton;}
+\DoxyCodeLine{00101\ \ \ \ \ QPushButton\ *m\_showButton;}
+\DoxyCodeLine{00102\ \ \ \ \ QPushButton\ *m\_clearButton;}
+\DoxyCodeLine{00103\ \ \ \ \ QPushButton\ *m\_commandButton;}
+\DoxyCodeLine{00104\ \ \ \ \ QLabel\ *m\_statusLabel;}
+\DoxyCodeLine{00105\ \ \ \ \ vtkRenderWindow\ *m\_renderWindow;}
+\DoxyCodeLine{00106\ \ \ \ \ QVTKOpenGLNativeWidget*\ m\_vtkWidget;}
+\DoxyCodeLine{00107\ \ \ \ \ QComboBox*\ m\_meshingCombo;}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{class_visualization_window}{VisualizationWindow}}\ *m\_visualizationWindow;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{class_command_parser}{CommandParser}}\ *m\_parser;}
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{class_command_handler}{CommandHandler}}\ *m\_handler;}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_command_input_dialog}{CommandInputDialog}}*\ m\_commandInputDlg;}
+\DoxyCodeLine{00113\ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

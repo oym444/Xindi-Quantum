@@ -1,0 +1,39 @@
+\doxysection{visualizationwindow.\+h}
+\hypertarget{visualizationwindow_8h_source}{}\label{visualizationwindow_8h_source}\mbox{\hyperlink{visualizationwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QVTKOpenGLNativeWidget.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vtkSmartPointer.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vtkRenderer.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vtkActor.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vtkPolyData.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vtkPolyDataMapper.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <vtkCellPicker.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <vtkInteractorStyleTrackballCamera.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_visualization_window_a6460d78e9922fe8135dc139ddb0eeb2d}{VisualizationWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_visualization_window_a6460d78e9922fe8135dc139ddb0eeb2d}{VisualizationWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_visualization_window_a2802e3d5926ddb4ad2ce4bc9ea1260a2}{setModel}}(vtkSmartPointer<vtkPolyData>\ polyData);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_visualization_window_ae350e1f5cd6b1bf0d7028e3a39a6e78e}{mousePressEvent}}(QMouseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ QVTKOpenGLNativeWidget\ *m\_vtkWidget;}
+\DoxyCodeLine{00050\ \ \ \ \ vtkSmartPointer<vtkRenderer>\ m\_renderer;}
+\DoxyCodeLine{00051\ \ \ \ \ vtkSmartPointer<vtkActor>\ m\_modelActor;}
+\DoxyCodeLine{00052\ \ \ \ \ vtkSmartPointer<vtkPolyDataMapper>\ m\_mapper;}
+\DoxyCodeLine{00053\ \ \ \ \ vtkSmartPointer<vtkActor>\ m\_selectedActor;}
+\DoxyCodeLine{00054\ \ \ \ \ vtkSmartPointer<vtkCellPicker>\ m\_picker;}
+\DoxyCodeLine{00055\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,53 @@
+\doxysection{Command\+Handler Class Reference}
+\hypertarget{class_command_handler}{}\label{class_command_handler}\index{CommandHandler@{CommandHandler}}
+
+
+命令处理器类，用于处理用户输入的命令  
+
+
+
+
+{\ttfamily \#include $<$commandhandler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_command_handler_a19670f175a35ec62168a12aeb656433b}{handle\+Command}} (const QString \&cmd, const QMap$<$ QString, QString $>$ \&params, \mbox{\hyperlink{class_trapezoid_modeler}{Trapezoid\+Modeler}} \&modeler, \mbox{\hyperlink{class_extruder}{Extruder}} \&extruder, \mbox{\hyperlink{class_visualization_window}{Visualization\+Window}} \texorpdfstring{$\ast$}{*}visualization\+Window)
+\begin{DoxyCompactList}\small\item\em 处理用户输入的命令 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+命令处理器类，用于处理用户输入的命令 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_command_handler_a19670f175a35ec62168a12aeb656433b}\index{CommandHandler@{CommandHandler}!handleCommand@{handleCommand}}
+\index{handleCommand@{handleCommand}!CommandHandler@{CommandHandler}}
+\doxysubsubsection{\texorpdfstring{handleCommand()}{handleCommand()}}
+{\footnotesize\ttfamily \label{class_command_handler_a19670f175a35ec62168a12aeb656433b} 
+bool Command\+Handler\+::handle\+Command (\begin{DoxyParamCaption}\item[{const QString \&}]{cmd}{, }\item[{const QMap$<$ QString, QString $>$ \&}]{params}{, }\item[{\mbox{\hyperlink{class_trapezoid_modeler}{Trapezoid\+Modeler}} \&}]{modeler}{, }\item[{\mbox{\hyperlink{class_extruder}{Extruder}} \&}]{extruder}{, }\item[{\mbox{\hyperlink{class_visualization_window}{Visualization\+Window}} \texorpdfstring{$\ast$}{*}}]{visualization\+Window}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+处理用户输入的命令 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & 命令名称 \\
+\hline
+{\em params} & 命令参数 \\
+\hline
+{\em modeler} & 梯形建模器 \\
+\hline
+{\em extruder} & 拉伸器 \\
+\hline
+{\em visualization\+Window} & 可视化窗口 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+命令执行是否成功 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{commandhandler_8h}{commandhandler.\+h}}\end{DoxyCompactItemize}

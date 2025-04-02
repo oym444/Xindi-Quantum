@@ -1,0 +1,28 @@
+\doxysection{extruder.\+h}
+\hypertarget{extruder_8h_source}{}\label{extruder_8h_source}\mbox{\hyperlink{extruder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <TopoDS\_Shape.hxx>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_extruder_af58696ee8675344b7350fd9b7097bb94}{Extruder}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_extruder_af58696ee8675344b7350fd9b7097bb94}{Extruder}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_extruder_a571f3a01c230e623f8e69e98548c5a09}{setExtrudeParameters}}(\textcolor{keywordtype}{double}\ distance);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ TopoDS\_Shape\ \mbox{\hyperlink{class_extruder_a84703f1f8b1475ab2f8d5a3d9beed822}{extrude}}(\textcolor{keyword}{const}\ TopoDS\_Shape\&\ shape);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ QString\ \mbox{\hyperlink{class_extruder_a0aa9d0875787f55d4f664735f4d1ba35}{getErrorInfo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ QString\ \mbox{\hyperlink{class_extruder_a06da44f89a2f6873bb93eed18d9702b5}{getStatusInfo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ m\_distance;\ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ QString\ m\_errorInfo;\ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ QString\ m\_statusInfo;\ \ \ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+
+\end{DoxyCode}

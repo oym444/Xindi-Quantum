@@ -1,0 +1,86 @@
+{
+	"BUILD_DIR" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/tests/unit_tests_autogen",
+	"CMAKE_BINARY_DIR" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/WORK/CADBuilder/tests",
+	"CMAKE_EXECUTABLE" : "E:/QT/Tools/CMake_64/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/WORK/CADBuilder/tests/CMakeLists.txt",
+		"D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/.qtc/package-manager/auto-setup.cmake",
+		"D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/CMakeFiles/3.24.2/CMakeCCompiler.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/CMakeCInformation.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/Compiler/MSVC-C.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/Compiler/MSVC.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows-MSVC-C.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows-MSVC.cmake",
+		"E:/QT/Tools/CMake_64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/WORK/CADBuilder",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/tests/unit_tests_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/tests/unit_tests_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"GTEST_LINKED_AS_SHARED_LIBRARY=1",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB",
+		"WIN32"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/WORK/3rdparty/OCCT-7.5.0/inc",
+		"D:/WORK/3rdparty/googletest-1.11.0/include",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/include",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/include/QtWidgets",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/include/QtGui",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/include/QtANGLE",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/include/QtCore",
+		"E:/QT/5.12.9/5.12.9/msvc2017_64/mkspecs/win32-msvc"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/tests/CMakeFiles/unit_tests_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "E:/QT/5.12.9/5.12.9/msvc2017_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "E:/QT/5.12.9/5.12.9/msvc2017_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 12,
+	"SETTINGS_FILE" : "D:/WORK/build-CADBuilder-Desktop_Qt_5_12_9_MSVC2017_64bit-Release/tests/CMakeFiles/unit_tests_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "D:/WORK/CADBuilder/tests/units_test.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

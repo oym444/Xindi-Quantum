@@ -1,0 +1,21 @@
+\doxysection{vtkconverter.\+h}
+\hypertarget{vtkconverter_8h_source}{}\label{vtkconverter_8h_source}\mbox{\hyperlink{vtkconverter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <TopoDS\_Shape.hxx>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vtkPolyData.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <IVtkOCC\_Shape.hxx>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <IVtkTools\_ShapeDataSource.hxx>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vtk_converter}{VtkConverter}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ vtkSmartPointer<vtkPolyData>\ \mbox{\hyperlink{class_vtk_converter_a8c7a2f374b0124bfab6cca8e4b6569d5}{convertToVtkHighLevel}}(\textcolor{keyword}{const}\ TopoDS\_Shape\&\ shape);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ vtkSmartPointer<vtkPolyData>\ \mbox{\hyperlink{class_vtk_converter_af416f5ed2c511e78ff5c951d02de77e8}{convertToVtkLowLevel}}(\textcolor{keyword}{const}\ TopoDS\_Shape\&\ shape);}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+
+\end{DoxyCode}

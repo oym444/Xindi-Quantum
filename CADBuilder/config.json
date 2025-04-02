@@ -1,0 +1,7 @@
+{
+    "width": 40.0,
+    "height": 20.0,
+    "theta": 20.0,
+    "extrude_distance": 10.0,
+    "save_path": "output.brep"
+}

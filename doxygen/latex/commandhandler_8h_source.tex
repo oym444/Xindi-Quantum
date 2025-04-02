@@ -1,0 +1,78 @@
+\doxysection{commandhandler.\+h}
+\hypertarget{commandhandler_8h_source}{}\label{commandhandler_8h_source}\mbox{\hyperlink{commandhandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ COMMANDHANDLER\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ COMMANDHANDLER\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{trapezoidmodeler_8h}{trapezoidmodeler.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{extruder_8h}{extruder.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{visualizationwindow_8h}{visualizationwindow.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vtkconverter_8h}{vtkconverter.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_command_handler}{CommandHandler}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_command_handler_a19670f175a35ec62168a12aeb656433b}{handleCommand}}(\textcolor{keyword}{const}\ QString\&\ cmd,\ \textcolor{keyword}{const}\ QMap<QString,\ QString>\&\ params,\ \mbox{\hyperlink{class_trapezoid_modeler}{TrapezoidModeler}}\&\ modeler,\ \mbox{\hyperlink{class_extruder}{Extruder}}\&\ extruder,\ \mbox{\hyperlink{class_visualization_window}{VisualizationWindow}}*\ visualizationWindow)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cmd\ ==\ \textcolor{stringliteral}{"{}trapezoid"{}})\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ QString\ name\ =\ params[\textcolor{stringliteral}{"{}-\/name"{}}];}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ width\ =\ params[\textcolor{stringliteral}{"{}-\/width"{}}].toDouble();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ height\ =\ params[\textcolor{stringliteral}{"{}-\/height"{}}].toDouble();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ theta\ =\ params[\textcolor{stringliteral}{"{}-\/theta"{}}].toDouble();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (modeler.\mbox{\hyperlink{class_trapezoid_modeler_ab9752bc11696eca48de0d1dd264a8992}{setParameters}}(width,\ height,\ theta)\ \&\&\ modeler.\mbox{\hyperlink{class_trapezoid_modeler_a8cca8c6a29bef6f585db827810c9d1be}{buildModel}}(name))\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cmd\ ==\ \textcolor{stringliteral}{"{}extrude"{}})\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ QString\ name\ =\ params[\textcolor{stringliteral}{"{}-\/name"{}}];}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ QString\ source\ =\ params[\textcolor{stringliteral}{"{}-\/source"{}}];}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ distance\ =\ params[\textcolor{stringliteral}{"{}-\/distance"{}}].toDouble();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (extruder.\mbox{\hyperlink{class_extruder_a571f3a01c230e623f8e69e98548c5a09}{setExtrudeParameters}}(distance))\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TopoDS\_Shape\ shape\ =\ extruder.\mbox{\hyperlink{class_extruder_a84703f1f8b1475ab2f8d5a3d9beed822}{extrude}}(modeler.\mbox{\hyperlink{class_trapezoid_modeler_aff1e6e5b9b8fa166836c02eb807206d5}{getShape}}());}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!shape.IsNull())\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ modeler.\mbox{\hyperlink{class_trapezoid_modeler_af3bf6e8e2d34d03fcf5b4a52d7e56ec0}{setShape}}(shape);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cmd\ ==\ \textcolor{stringliteral}{"{}clear"{}})\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 清空所有模型}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ modeler.\mbox{\hyperlink{class_trapezoid_modeler_af3bf6e8e2d34d03fcf5b4a52d7e56ec0}{setShape}}(TopoDS\_Shape());}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cmd\ ==\ \textcolor{stringliteral}{"{}show"{}})\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 显示所有模型}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (modeler.\mbox{\hyperlink{class_trapezoid_modeler_aff1e6e5b9b8fa166836c02eb807206d5}{getShape}}().IsNull())\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}No\ model\ to\ display!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 根据选择的方式转换数据}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ vtkSmartPointer<vtkPolyData>\ polyData;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ polyData\ =\ \mbox{\hyperlink{class_vtk_converter_a8c7a2f374b0124bfab6cca8e4b6569d5}{VtkConverter::convertToVtkHighLevel}}(modeler.\mbox{\hyperlink{class_trapezoid_modeler_aff1e6e5b9b8fa166836c02eb807206d5}{getShape}}());}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!polyData)\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}模型数据转换失败"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (polyData\ \&\&\ polyData-\/>GetNumberOfPoints()\ >\ 0)\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ visualizationWindow-\/>\mbox{\hyperlink{class_visualization_window_a2802e3d5926ddb4ad2ce4bc9ea1260a2}{setModel}}(polyData);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ visualizationWindow-\/>show();}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ convert\ model\ for\ display."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMMANDHANDLER\_H}}
+
+\end{DoxyCode}

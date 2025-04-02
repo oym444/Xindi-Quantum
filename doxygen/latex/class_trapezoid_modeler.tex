@@ -1,0 +1,155 @@
+\doxysection{Trapezoid\+Modeler Class Reference}
+\hypertarget{class_trapezoid_modeler}{}\label{class_trapezoid_modeler}\index{TrapezoidModeler@{TrapezoidModeler}}
+
+
+梯形建模器类  
+
+
+
+
+{\ttfamily \#include $<$trapezoidmodeler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_trapezoid_modeler_a7afbde8466b43bb1541ff6f7b6858eb4}\label{class_trapezoid_modeler_a7afbde8466b43bb1541ff6f7b6858eb4} 
+{\bfseries Trapezoid\+Modeler} ()
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trapezoid_modeler_ab9752bc11696eca48de0d1dd264a8992}{set\+Parameters}} (double width, double height, double theta)
+\begin{DoxyCompactList}\small\item\em 设置等腰梯形参数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trapezoid_modeler_a8cca8c6a29bef6f585db827810c9d1be}{build\+Model}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em 构建等腰梯形模型 \end{DoxyCompactList}\item 
+Topo\+DS\+\_\+\+Shape \mbox{\hyperlink{class_trapezoid_modeler_aff1e6e5b9b8fa166836c02eb807206d5}{get\+Shape}} () const
+\begin{DoxyCompactList}\small\item\em 获取模型 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trapezoid_modeler_af3bf6e8e2d34d03fcf5b4a52d7e56ec0}{set\+Shape}} (const Topo\+DS\+\_\+\+Shape \&shape)
+\begin{DoxyCompactList}\small\item\em 设置模型形状 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trapezoid_modeler_aac0979dbb7795bb9ee4b71370771da91}{save\+Model}} (const QString \&file\+Path)
+\begin{DoxyCompactList}\small\item\em 保存构建的模型 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_trapezoid_modeler_ae65ea8a1c9b2e7bc8e8909effb0b9ae4}{get\+Error\+Info}} () const
+\begin{DoxyCompactList}\small\item\em 获取错误信息 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_trapezoid_modeler_a878dd72788f675cdb4315d9cb71a7c19}{get\+Status\+Info}} () const
+\begin{DoxyCompactList}\small\item\em 获取建模状态信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+梯形建模器类 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trapezoid_modeler_a8cca8c6a29bef6f585db827810c9d1be}\index{TrapezoidModeler@{TrapezoidModeler}!buildModel@{buildModel}}
+\index{buildModel@{buildModel}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{buildModel()}{buildModel()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_a8cca8c6a29bef6f585db827810c9d1be} 
+bool Trapezoid\+Modeler\+::build\+Model (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+构建等腰梯形模型 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 模型名称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否成功 
+\end{DoxyReturn}
+\Hypertarget{class_trapezoid_modeler_ae65ea8a1c9b2e7bc8e8909effb0b9ae4}\index{TrapezoidModeler@{TrapezoidModeler}!getErrorInfo@{getErrorInfo}}
+\index{getErrorInfo@{getErrorInfo}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{getErrorInfo()}{getErrorInfo()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_ae65ea8a1c9b2e7bc8e8909effb0b9ae4} 
+QString Trapezoid\+Modeler\+::get\+Error\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+获取错误信息 
+
+\begin{DoxyReturn}{Returns}
+错误信息 
+\end{DoxyReturn}
+\Hypertarget{class_trapezoid_modeler_aff1e6e5b9b8fa166836c02eb807206d5}\index{TrapezoidModeler@{TrapezoidModeler}!getShape@{getShape}}
+\index{getShape@{getShape}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_aff1e6e5b9b8fa166836c02eb807206d5} 
+Topo\+DS\+\_\+\+Shape Trapezoid\+Modeler\+::get\+Shape (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+获取模型 
+
+\begin{DoxyReturn}{Returns}
+模型形状 
+\end{DoxyReturn}
+\Hypertarget{class_trapezoid_modeler_a878dd72788f675cdb4315d9cb71a7c19}\index{TrapezoidModeler@{TrapezoidModeler}!getStatusInfo@{getStatusInfo}}
+\index{getStatusInfo@{getStatusInfo}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{getStatusInfo()}{getStatusInfo()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_a878dd72788f675cdb4315d9cb71a7c19} 
+QString Trapezoid\+Modeler\+::get\+Status\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+获取建模状态信息 
+
+\begin{DoxyReturn}{Returns}
+状态信息 
+\end{DoxyReturn}
+\Hypertarget{class_trapezoid_modeler_aac0979dbb7795bb9ee4b71370771da91}\index{TrapezoidModeler@{TrapezoidModeler}!saveModel@{saveModel}}
+\index{saveModel@{saveModel}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{saveModel()}{saveModel()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_aac0979dbb7795bb9ee4b71370771da91} 
+bool Trapezoid\+Modeler\+::save\+Model (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+
+
+保存构建的模型 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & 保存文件路径 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否成功 
+\end{DoxyReturn}
+\Hypertarget{class_trapezoid_modeler_ab9752bc11696eca48de0d1dd264a8992}\index{TrapezoidModeler@{TrapezoidModeler}!setParameters@{setParameters}}
+\index{setParameters@{setParameters}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{setParameters()}{setParameters()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_ab9752bc11696eca48de0d1dd264a8992} 
+bool Trapezoid\+Modeler\+::set\+Parameters (\begin{DoxyParamCaption}\item[{double}]{width}{, }\item[{double}]{height}{, }\item[{double}]{theta}{}\end{DoxyParamCaption})}
+
+
+
+设置等腰梯形参数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & 底边长度 \\
+\hline
+{\em height} & 高度 \\
+\hline
+{\em theta} & 腰与底边垂线的夹角（以度为单位） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否成功 
+\end{DoxyReturn}
+\Hypertarget{class_trapezoid_modeler_af3bf6e8e2d34d03fcf5b4a52d7e56ec0}\index{TrapezoidModeler@{TrapezoidModeler}!setShape@{setShape}}
+\index{setShape@{setShape}!TrapezoidModeler@{TrapezoidModeler}}
+\doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
+{\footnotesize\ttfamily \label{class_trapezoid_modeler_af3bf6e8e2d34d03fcf5b4a52d7e56ec0} 
+void Trapezoid\+Modeler\+::set\+Shape (\begin{DoxyParamCaption}\item[{const Topo\+DS\+\_\+\+Shape \&}]{shape}{}\end{DoxyParamCaption})}
+
+
+
+设置模型形状 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & 模型形状 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{trapezoidmodeler_8h}{trapezoidmodeler.\+h}}\item 
+trapezoidmodeler.\+cpp\end{DoxyCompactItemize}
